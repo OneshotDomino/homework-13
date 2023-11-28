@@ -1,0 +1,75 @@
+.intro {
+    padding-top: 69px;
+    padding-bottom: 21px;
+    background-image: url(../../img/intro-bakc.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.intro__title {
+    margin: 0 auto;
+    margin-bottom: 18px;
+    max-width: 639px;
+    color: #fff;
+    text-align: center;
+    font-size: 78px;
+    line-height: 76px;
+}
+
+.intro__title::after {
+    @include pseudoelement($color: #fff);
+    margin: 0 auto;
+    margin-top:36px;
+}
+
+.intro__text {
+    margin-bottom: 49px;
+    color: #fff;
+    text-align: center;
+    font-family: Vollkorn;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.intro__pagination {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.intro__pagination-item {
+    width: 9px;
+    height: 9px;
+    background-color: #FFFFFF66;
+}
+
+.intro__pagination-item_active {
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .intro__title {
+        font-size: 65px;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+    .intro__title {
+        font-size: 55px;
+        line-height: 55px;
+    }
+}
+
+@media (max-width: 479px) {
+    .intro__title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .intro__text {
+        max-width: 250px;
+        margin: 0 auto 39px;
+    }
+}

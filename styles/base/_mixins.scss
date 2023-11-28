@@ -1,0 +1,7 @@
+@mixin pseudoelement($color) {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 60px;
+    background-color: $color;
+} 

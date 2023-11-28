@@ -1,0 +1,54 @@
+.process {
+    padding: 127px 0 132px;
+    background-image: url(../../img/sea-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.process__text {
+    color: $main-color;
+    font-size: 47px;
+    line-height: 55px;
+    max-width: 842px;
+}
+
+.process__text::after {
+    @include pseudoelement($color: $main-color);
+    margin-top: 23px;
+}
+
+@media (max-width: 1200px) {
+    .process__text {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .process__text::after {
+        margin: 23px auto 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .process {
+        padding: 70px 0 70px;
+    }
+
+    .process__text {
+        font-size: 35px;
+        line-height: 40px;
+        max-width: 560px;
+    }
+}
+
+@media (max-width: 576px) {
+    .process__text {
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 479px) {
+    .process {
+        padding: 40px 0 40px;
+    }
+}

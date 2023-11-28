@@ -1,0 +1,30 @@
+.button {
+    margin: 0 auto;
+    margin-bottom: 86px;
+    padding: 10px 17px;
+    display: block;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 20px;
+    border: 2px solid #FFF;
+    background: rgba(77, 77, 77, 0.20);
+}
+
+.button_big {
+    margin: 0;
+    padding: 11px 74px;
+    color: $main-color;
+    border-color: $main-color; 
+}
+
+@media (max-width: 479px) {
+    .button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .button_big {
+        order: 1;
+    }
+}
